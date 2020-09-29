@@ -5,4 +5,4 @@ The file returns a random cat photo from Flickr's public catalogue, together wit
 
 *Disclaimer:* The code searches Flickr for photos using "cat" as a keyword. But this depends **entirely** on users uploading the correct tag. I have absolutely zero control of what kind of photos might pop up, and assume no responsibility, so be warned! :grin:	
 
-Wanna see a live sample? Visit <a href="https://bit.ly/goronade" target="_blank">this page</a>!
+Wanna see a live sample? Visit <a target="_blank" href="https://bit.ly/goronade">this page</a>!
