@@ -34,9 +34,11 @@
 		var phrase;
 		var det1, det2;
 		var w = ["wrb", "wp", "wdt"];
-		var adj = ["cute","tuxedo","curious","angry","calico","careful","small", "fat","sleepy"];
+		var adj = ["cute", "tuxedo", "curious", "angry", "calico", "careful", "small", "fat", "sleepy", "cappuccino"];
+		var n0 = ["Cute voice", "I am hungry", "Please morph", "Behave strangely"];
 		var n1 = ["cat", "cats", "I", "the"];
-		var n2 = ["nadenade", "mofumofu", "morphed", "nade", "mofu", "pero", "peropero", "tonton", "tokotoko", "nyanya", "fuwafuwa", "goro", "gorogoro", ""];
+		var n2 = ["nadenade", "mofumofu", "morphed", "nade", "mofu", "pero", "peropero", "tonton", "tokotoko", "nyanya", "fuwafuwa", "goro", "gorogoro", "rolled", "nade"];
+		var n3 = ["is cute", "was pleased", "was delighted", "more cats came", ("then another cat " + RiTa.randomItem(n2)), ("said '" + RiTa.randomItem(n0)) + "'"];
 		$(document).ready(function(){
 			$.getJSON("https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
 				{
@@ -62,7 +64,7 @@
 				if (det2 == "nary") {
 					det2 = "some";
 				}
-				phrase = (det1 + " " + RiTa.randomItem(adj) + " " + RiTa.randomItem(n1) + " " + RiTa.randomItem(n2) + " " + RiTa.randomWord(RiTa.randomItem(w)) + " " + RiTa.randomWord("rb") + " " + det2 + " cat " + RiTa.randomItem(n2) +".");
+				phrase = (det1 + " " + RiTa.randomItem(adj) + " " + RiTa.randomItem(n1) + " " + RiTa.randomItem(n2) + " " + RiTa.randomWord(RiTa.randomItem(w)) + " " + RiTa.randomWord("rb") + " " + det2 + " cat " + RiTa.randomItem(n2) + " and " + RiTa.randomItem(n3) + ".");
 				document.getElementById("nade").innerHTML = phrase;
 		});			
 	</script>
